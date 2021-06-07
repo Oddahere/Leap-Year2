@@ -1,0 +1,25 @@
+<html>
+<body style =" position: relative;text-align: center;background-color:#7FC2FA;">
+
+<h2>Check Leap year from Array List</h2>
+
+<p id="demo"></p>
+<p>Result:<p>
+<p id="result"></p>
+<script>
+var years = [2020, 2021, 2022,2023,2024,2025,2026,2027,2028,2029,2030,2013,2032];
+document.getElementById("demo").innerHTML = "This is my Array List: "+years;
+res = "";
+for (let i = 0; i < years.length; i++) {
+if(years[i]%4==0){
+res = res+years[i]+" is a Leap Year<br>"
+}
+else{
+res = res+years[i]+" is not a Leap Year<br>"
+}
+}
+document.getElementById("result").innerHTML = res;
+</script>
+
+</body>
+</html>
